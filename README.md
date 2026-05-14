@@ -21,7 +21,7 @@ Streamlit Deployment:
 
 ---
 
-## 🧠 Features
+## Features
 
 * Predicts machine failure using sensor metrics
 * Handles imbalanced datasets using SMOTE
@@ -32,7 +32,7 @@ Streamlit Deployment:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Programming Language
 
@@ -60,7 +60,7 @@ Streamlit Deployment:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 predictive-maintenance-ml/
@@ -80,28 +80,28 @@ predictive-maintenance-ml/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 
 ```bash
 git clone https://github.com/devisri36/predictive-maintenance-ml.git
 cd predictive-maintenance-ml
 ```
 
-### 2️⃣ Install Dependencies
+### 2️ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Train Model
+### 3️ Train Model
 
 ```bash
 python train_model.py
 ```
 
-### 4️⃣ Run Streamlit App
+### 4️ Run Streamlit App
 
 ```bash
 streamlit run app.py
@@ -109,7 +109,7 @@ streamlit run app.py
 
 ---
 
-## 📊 Machine Learning Workflow
+## Machine Learning Workflow
 
 1. Data Collection
 2. Data Preprocessing
@@ -121,7 +121,7 @@ streamlit run app.py
 
 ---
 
-## 📈 Model Performance
+## Model Performance
 
 * Accuracy achieved: ~99%
 * Implemented SMOTE oversampling to improve minority class prediction
@@ -134,7 +134,7 @@ streamlit run app.py
 
 ---
 
-## 💡 Challenges Faced
+## Challenges Faced
 
 * Highly imbalanced dataset with very few failure samples
 * Improving failure detection capability
@@ -142,7 +142,7 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Real-time IoT sensor integration
 * Advanced Deep Learning models (LSTM)
@@ -152,12 +152,3 @@ streamlit run app.py
 
 ---
 
-
-## 👩‍💻 Author
-
-**Devi Sri Lakshmi Nulu**
-
-* LinkedIn: https://www.linkedin.com/
-* GitHub: https://github.com/devisri36
-
----
