@@ -13,57 +13,37 @@ st.set_page_config(
 st.title("🔧 Predictive Maintenance System")
 
 st.write("""
-This system predicts whether an industrial machine
-is likely to fail based on sensor data.
+Predict industrial machine failures using sensor metrics.
 """)
 
 # Inputs
-type_value = st.selectbox(
-    "Machine Type",
-    [0, 1, 2]
-)
-
-air_temp = st.number_input(
-    "Air Temperature [K]",
-    min_value=250.0,
-    max_value=400.0
-)
-
-process_temp = st.number_input(
-    "Process Temperature [K]",
-    min_value=250.0,
-    max_value=400.0
-)
-
-rotational_speed = st.number_input(
-    "Rotational Speed [rpm]",
-    min_value=0
-)
-
-torque = st.number_input(
-    "Torque [Nm]",
-    min_value=0.0
-)
-
-tool_wear = st.number_input(
-    "Tool Wear [min]",
-    min_value=0
-)
+metric1 = st.number_input("Metric 1", value=100000000)
+metric2 = st.number_input("Metric 2", value=0)
+metric3 = st.number_input("Metric 3", value=0)
+metric4 = st.number_input("Metric 4", value=0)
+metric5 = st.number_input("Metric 5", value=5)
+metric6 = st.number_input("Metric 6", value=300000)
+metric7 = st.number_input("Metric 7", value=0)
+metric8 = st.number_input("Metric 8", value=0)
+metric9 = st.number_input("Metric 9", value=0)
 
 if st.button("Predict Failure"):
 
     input_data = np.array([[
-        type_value,
-        air_temp,
-        process_temp,
-        rotational_speed,
-        torque,
-        tool_wear
+        metric1,
+        metric2,
+        metric3,
+        metric4,
+        metric5,
+        metric6,
+        metric7,
+        metric8,
+        metric9
     ]])
 
     prediction = model.predict(input_data)
 
     if prediction[0] == 1:
-        st.error("⚠ Machine Failure Likely!")
+        st.error("Machine Failure Likely")
     else:
-        st.success("✅ Machine Operating Normally")
+        st.success("Machine Operating Normally")
